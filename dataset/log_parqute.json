@@ -1,0 +1,19 @@
+{
+	"name": "log_parqute",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "appstorage502_service",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "parquet"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
